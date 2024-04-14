@@ -1,12 +1,12 @@
 module queue(clk,rst,datain,rw,dataout,full,empty,led); 
 input clk,rst,rw;
-input [7:0]datain; 
-reg [7:0]readptr;
- reg [7:0]writeptr; 
+input [3:0]datain; 
+reg [3:0]readptr;
+ reg [3:0]writeptr; 
 output led;
 wire c;
-output reg [7:0]dataout;
- reg [7:0]mem[255:0]; 
+output reg [3:0]dataout;
+ reg [3:0]mem[15:0]; 
 assign led=c;
 output reg full,empty; 
 div dd(clk,rst,c); 
@@ -18,12 +18,12 @@ dataout=0;
 readptr=0; 
 writeptr=0;
  end
-else if(rw==1&&writeptr<255)
+else if(rw==1&&writeptr<15)
  begin 
 mem[writeptr]=datain;
  writeptr=writeptr+1;
 end
-else if(rw==1&&writeptr==255)
+else if(rw==1&&writeptr==15)
  full=1;
 else if(rw==0&&readptr<writeptr)
  begin

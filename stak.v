@@ -4,7 +4,7 @@ input [3:0] datain;
 reg [3:0] ptr; 
 wire c; 
 output led;
-output reg [7:0] dataout;
+output  reg [3:0] dataout;
  reg [3:0] mem[15:0];
  assign led=c;
 output reg full, empty; 
