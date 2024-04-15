@@ -1,11 +1,11 @@
-module piso(d,clk,s,y);
+module piso(d,clk1,s,y);
   input [3:0]d;
-  input clk,s;
+  input clk1,s;
   wire sb,clk1;
   output y;
   wire w1,w2,w3,w4,y1,y2,y3,y4,y5,y6,z1,z2,z3;
   assign sb=~s;
-  div(clk,0,clk1); 
+  div kk(clk1,0,clk); 
   dff l1(d[0],clk,w1);
   ad l5(w1,s,y1);
   ad l6(d[1],sb,y2);

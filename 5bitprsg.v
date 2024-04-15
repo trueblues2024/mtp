@@ -1,7 +1,7 @@
-module prsg(clk,ini,q);
- input clk,ini;
+ module prsg(clk1,ini,q);
+ input clk1,ini;
  output [4:0]q;
- //div(clk1,rst,clk); 
+ div kk(clk1,rst,clk); 
  dff d1(clk,x,ini,q[0]);
  dff d2(clk,q[0],ini,q[1]);
  dff d3(clk,q[1],ini,q[2]);

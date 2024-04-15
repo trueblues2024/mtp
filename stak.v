@@ -9,7 +9,7 @@ output  reg [3:0] dataout;
  assign led=c;
 output reg full, empty; 
 div dd(clk,rst,c); 
-always @(posedge c)
+always @(posedge clk)
  begin
 if (rst == 1) 
 begin
