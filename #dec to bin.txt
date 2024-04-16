@@ -1,0 +1,8 @@
+#dec to bin
+b = 255
+s=bin(b)[2:]
+print(bin(b)[2:])
+print(s[4:5])
+#bin to dec
+decimal = int(s, 2)
+print(decimal) 
