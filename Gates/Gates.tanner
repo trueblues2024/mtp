@@ -1,0 +1,7 @@
+workspace loadfrom -path .
+cell open -design Gates -cell XNOR -type schematic -newwindow
+window move -left 156 -top 156 -width 798 -height 321 -undock -max 
+window fit -x0 -3855 -y0 452 -x1 8135 -y1 6131 -units iu
+workspace dockinglayout load -file {.\dockinglayout.xml}
+source open.design -relativeto user -encoding utf-8
+source open.design -relativeto design -encoding utf-8
