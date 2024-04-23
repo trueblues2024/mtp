@@ -1,0 +1,7 @@
+workspace loadfrom -path .
+cell open -design Logic_Gate -cell Footed_Nand -type schematic -newwindow
+window move -left 182 -top 182 -width 878 -height 427 -undock -max 
+window fit -x0 -279 -y0 1744 -x1 8203 -y1 6420 -units iu
+workspace dockinglayout load -file {.\dockinglayout.xml}
+source open.design -relativeto user -encoding utf-8
+source open.design -relativeto design -encoding utf-8

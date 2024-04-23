@@ -1,0 +1,19 @@
+(edif inver
+	(edifVersion 2 0 0)
+	(edifLevel 0)
+	(keywordMap
+		(keywordLevel 0)
+	)
+	(status
+		(written
+			(timestamp 2024 04 16 00 10 48)
+			(author "Administrator")
+			(program "Tanner S-Edit"
+				(version "15.00 build 5037")
+			)
+			(property TannerEdifVersion
+				(integer 10)
+			)
+		)
+	)
+)
