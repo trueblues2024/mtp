@@ -1,0 +1,7 @@
+workspace loadfrom -path .
+cell open -design gates -cell CVSH -type schematic -newwindow
+window move -left 2 -top -22 -width 946 -height 471 -undock -normal 
+window fit -x0 -714 -y0 3627 -x1 6090 -y1 6773 -units iu
+workspace dockinglayout load -file {.\dockinglayout.xml}
+source open.design -relativeto user -encoding utf-8
+source open.design -relativeto design -encoding utf-8
