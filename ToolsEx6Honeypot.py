@@ -1,9 +1,5 @@
 import socket
 import datetime
-'''import subprocess
-command=["dumpcap -i","eth0"]
-subprocess.run(command)
-'''
 def  log_connection(client_address):
                 current_time=datetime.datetime.now().strftime("%Y-%M-%D %H %m %s")
                 with open("honeypot_log","a") as logfile:
